@@ -1,42 +1,40 @@
 function Hero() {
   try {
     return (
-      <section className="relative py-8 sm:py-12 bg-[var(--primary-color)]" data-name="hero" data-file="components/Hero.js">
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
-        
-        <div className="mobile-container relative z-10">
-          <div className="text-center mb-6 sm:mb-8">
-            <div className="inline-block bg-white/20 rounded-full px-3 py-1 sm:px-4 sm:py-2 mb-4 sm:mb-6">
-              <span className="text-white font-medium text-sm sm:text-base">⚡ РЖАВЧИНА ИСЧЕЗАЕТ НАВСЕГДА</span>
+      <section className="relative py-6 sm:py-8 md:py-10" data-name="hero" data-file="components/Hero.js">
+        <div className="mobile-container">
+          <div className="text-center mb-4 sm:mb-6">
+            <div className="inline-block glass-card rounded-full px-4 py-2 sm:px-6 sm:py-2 mb-4 sm:mb-6">
+              <span className="text-white font-medium text-xs sm:text-sm">⚡ РЖАВЧИНА ИСЧЕЗАЕТ НАВСЕГДА</span>
             </div>
           </div>
           
-          <div className="text-center text-white mb-6 sm:mb-8">
-            <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="text-center text-white mb-4 sm:mb-6">
+            <div className="mb-4 sm:mb-6 flex justify-center">
               <img 
                 src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Преобразователь ржавчины" 
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md hero-image rounded-xl shadow-2xl"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md hero-image rounded-2xl shadow-2xl"
               />
             </div>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-shadow">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-white">
               Преобразователь ржавчины
-              <span className="block text-xl sm:text-2xl md:text-3xl mt-1">грунтовка по металлу</span>
+              <span className="block text-xl sm:text-2xl md:text-3xl mt-1 gradient-text">грунтовка по металлу</span>
             </h1>
             
-            <p className="text-base sm:text-lg mb-6 opacity-90 px-4">
+            <p className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 text-gray-300 px-4 max-w-2xl mx-auto">
               Комплексное решение против коррозии с защитным покрытием.
             </p>
             
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
-              <span className="price-old text-white/70">80 BYN</span>
-              <span className="price-new text-white">39.99 BYN</span>
-              <span className="discount-badge">-50%</span>
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <span className="text-gray-400 line-through text-lg sm:text-xl">80 BYN</span>
+              <span className="text-3xl sm:text-4xl font-bold gradient-text">39.99 BYN</span>
+              <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold shadow-lg">-50%</span>
             </div>
             
-            <div className="space-y-3 sm:space-y-0 sm:flex sm:gap-4 sm:justify-center">
-              <a href="#order" className="btn-primary block sm:inline-block">
+            <div className="flex justify-center">
+              <a href="#order" className="btn-primary inline-block text-sm sm:text-base">
                 Заказать сейчас
               </a>
             </div>

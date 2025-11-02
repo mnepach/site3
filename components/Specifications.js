@@ -24,29 +24,29 @@ function Specifications() {
     ];
 
     return (
-      <section className="py-8 sm:py-12 bg-white" data-name="specifications" data-file="components/Specifications.js">
+      <section className="py-12 sm:py-16" data-name="specifications" data-file="components/Specifications.js">
         <div className="mobile-container">
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Характеристики</h2>
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Характеристики</h2>
           </div>
           
-          <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="mb-8 sm:mb-10 flex justify-center">
             <img 
               src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
               alt="Технические характеристики" 
-              className="w-full max-w-md specs-image rounded-xl shadow-lg"
+              className="w-full max-w-md specs-image rounded-2xl shadow-2xl"
             />
           </div>
           
-          <div className="space-y-3 sm:space-y-4">
+          <div className="space-y-4">
             {specs.map((spec, index) => (
-              <div key={index} className="flex items-center gap-3 p-3 bg-[var(--surface)] rounded-lg">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[var(--secondary-color)] flex items-center justify-center flex-shrink-0">
-                  <div className={`icon-${spec.icon} text-sm sm:text-lg text-white`}></div>
+              <div key={index} className="glass-card rounded-2xl p-4 sm:p-5 flex items-center gap-4 hover:scale-[1.02] transition-transform duration-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <div className={`icon-${spec.icon} text-lg sm:text-xl text-white`}></div>
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm sm:text-base font-semibold text-[var(--text-primary)]">
-                    <strong>{spec.title}:</strong> {spec.value}
+                  <div className="text-sm sm:text-base font-semibold text-white">
+                    <strong>{spec.title}:</strong> <span className="text-gray-300">{spec.value}</span>
                   </div>
                 </div>
               </div>

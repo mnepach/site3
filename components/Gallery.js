@@ -20,17 +20,17 @@ function Gallery() {
     ];
 
     return (
-      <section id="gallery" className="py-8 sm:py-12 bg-gradient-to-b from-[var(--surface)] to-[var(--primary-color)]" data-name="gallery" data-file="components/Gallery.js">
+      <section id="gallery" className="py-12 sm:py-16" data-name="gallery" data-file="components/Gallery.js">
         <div className="mobile-container">
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[var(--text-primary)]">Фото товара</h2>
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Фото товара</h2>
           </div>
           
-          <div className="gallery-grid">
+          <div className="gallery-grid gap-4">
             {images.map((image, index) => (
               <div 
                 key={index} 
-                className="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="glass-card overflow-hidden rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
               >
                 <img 
                   src={image.url} 
