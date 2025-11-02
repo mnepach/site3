@@ -1,10 +1,10 @@
 function Hero() {
   try {
     return (
-      <section className="relative py-6 sm:py-8 md:py-10" data-name="hero" data-file="components/Hero.js">
+      <section className="relative py-6 sm:py-6 md:py-8" data-name="hero" data-file="components/Hero.js">
         <div className="mobile-container">
           <div className="text-center mb-4 sm:mb-6">
-            <div className="inline-block glass-card rounded-full px-4 py-2 sm:px-6 sm:py-2 mb-4 sm:mb-6">
+            <div className="inline-block glass-card rounded-full px-4 py-2 sm:px-6 sm:py-2 mb-4 sm:mb-4">
               <span className="text-white font-medium text-xs sm:text-sm">⚡ РЖАВЧИНА ИСЧЕЗАЕТ НАВСЕГДА</span>
             </div>
           </div>
