@@ -9,11 +9,11 @@ function ProductDescription() {
           
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
             
-            <div className="mb-6 sm:mb-8 overflow-hidden rounded-xl">
+            <div className="mb-6 sm:mb-8 overflow-hidden rounded-xl flex justify-center">
               <img 
                 src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Применение преобразователя" 
-                className="w-full rounded-xl shadow-md transition-transform duration-500 hover:scale-105"
+                className="w-full max-w-md description-image rounded-xl shadow-md transition-transform duration-500 hover:scale-105"
               />
             </div>
             
@@ -21,7 +21,6 @@ function ProductDescription() {
               <p className="text-[var(--text-secondary)] leading-relaxed text-justify text-sm sm:text-base lg:text-lg">
                 Инновационный преобразователь ржавчины с функцией грунтовки химически реагирует с коррозией, превращая её в прочное защитное покрытие. Не требует механической зачистки перед нанесением, создаёт идеальную основу для последующей покраски. Подходит для обработки кузовов автомобилей, металлических конструкций, труб и других поверхностей. Эффективно работает даже с глубокой коррозией, значительно продлевая срок службы металлических изделий.
               </p>
-              
             </div>
           </div>
         </div>

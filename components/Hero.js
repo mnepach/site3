@@ -12,11 +12,11 @@ function Hero() {
           </div>
           
           <div className="text-center text-white mb-6 sm:mb-8">
-            <div className="mb-6 sm:mb-8">
+            <div className="mb-6 sm:mb-8 flex justify-center">
               <img 
                 src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Преобразователь ржавчины" 
-                className="w-full max-w-xs sm:max-w-sm mx-auto rounded-xl shadow-2xl"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md hero-image rounded-xl shadow-2xl"
               />
             </div>
             

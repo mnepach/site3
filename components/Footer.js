@@ -37,15 +37,15 @@ function Footer() {
               <div className="text-xs sm:text-sm text-gray-400">
                 <p>ООО "АЛИВИТАРГЕТ" УНП 193766073</p>
                 <p>220113, до востребования</p>
-                <p className="mt-1 sm:mt-2">Акция действует на всей территории Беларуси</p>
               </div>
               
               <div className="text-xs sm:text-sm text-gray-400">
-                <p>© 2025 MetalGuard. Все права защищены.</p>
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-2">
-                  <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
-                  <a href="#" className="hover:text-white transition-colors">Пользовательское соглашение</a>
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+                  <a href="politics.html" className="hover:text-white transition-colors">Политика конфиденциальности</a>
+                  <a href="oferta.html" className="hover:text-white transition-colors">Публичная оферта</a>
+                  <a href="obmen_vozvrat.html" className="hover:text-white transition-colors">Обмен и возврат</a>
                 </div>
+                <p className="mt-2 sm:mt-3">© 2025 MetalGuard. Все права защищены.</p>
               </div>
             </div>
           </div>

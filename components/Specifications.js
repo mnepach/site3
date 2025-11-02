@@ -30,11 +30,11 @@ function Specifications() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Характеристики</h2>
           </div>
           
-          <div className="mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8 flex justify-center">
             <img 
               src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
               alt="Технические характеристики" 
-              className="w-full rounded-xl shadow-lg"
+              className="w-full max-w-md specs-image rounded-xl shadow-lg"
             />
           </div>
           

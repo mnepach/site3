@@ -26,7 +26,7 @@ function Gallery() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[var(--text-primary)]">Фото товара</h2>
           </div>
           
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="gallery-grid">
             {images.map((image, index) => (
               <div 
                 key={index} 
@@ -35,7 +35,7 @@ function Gallery() {
                 <img 
                   src={image.url} 
                   alt={image.alt}
-                  className="w-full h-32 sm:h-40 object-cover"
+                  className="w-full h-32 sm:h-40 md:h-full object-cover"
                 />
               </div>
             ))}
