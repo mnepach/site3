@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преобразователь ржавчины - Защита металла навсегда</title>
+    <meta name="description" content="Инновационный преобразователь ржавчины с функцией грунтовки. Превращает коррозию в защитное покрытие. Скидка 50%!">
+    <meta name="keywords" content="преобразователь ржавчины, грунтовка по металлу, защита от коррозии, антикоррозийное покрытие">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Преобразователь ржавчины - Защита металла навсегда">
+    <meta property="og:description" content="Инновационный преобразователь ржавчины с функцией грунтовки. Превращает коррозию в защитное покрытие. Скидка 50%!">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Преобразователь ржавчины - Защита металла навсегда">
+    <meta name="twitter:description" content="Инновационный преобразователь ржавчины с функцией грунтовки. Превращает коррозию в защитное покрытие. Скидка 50%!">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --border: #e2e8f0;
+            --success: #10b981;
+        }
+    }
+
+    @layer base {
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            background-color: var(--background);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @layer components {
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            @apply w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-[#552781] to-[#3B0470] text-white rounded-xl font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-center;
+        }
+        
+        .btn-secondary {
+            @apply w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-lg font-medium hover:bg-[var(--primary-color)] hover:text-white transition-all duration-300 text-center;
+        }
+        
+        .feature-card {
+            @apply bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[var(--border)];
+        }
+        
+        .price-old {
+            @apply text-[var(--text-secondary)] line-through text-lg sm:text-xl;
+        }
+        
+        .price-new {
+            @apply text-2xl sm:text-3xl font-bold text-[var(--accent-color)];
+        }
+        
+        .discount-badge {
+            @apply bg-[var(--accent-color)] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold;
+        }
+        
+        .mobile-container {
+            @apply px-4 sm:px-6 lg:px-8;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/ProductDescription.js"></script>
+    <script type="text/babel" src="components/Specifications.js"></script>
+    <script type="text/babel" src="components/Gallery.js"></script>
+    <script type="text/babel" src="components/OrderSection.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
