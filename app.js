@@ -44,6 +44,7 @@ function App() {
         <ProductDescription />
         <Specifications />
         <Gallery />
+        <Reviews />
         <OrderSection />
         <Footer />
       </div>
