@@ -38,6 +38,7 @@ function App() {
   try {
     return (
       <div className="min-h-screen" data-name="app" data-file="app.js">
+        <StickyBanner />
         <Header />
         <Hero />
         <Features />
